@@ -9,7 +9,7 @@ import java.awt.*;
 public class Ejercicio1InterfazGrafica {
 
 
-    public void interfazGrafica(){
+    public static void interfazGrafica(){
 
         JFrame marco = new JFrame();
         marco.setLayout(new FlowLayout());
@@ -38,7 +38,11 @@ public class Ejercicio1InterfazGrafica {
         marco.add(tfBase);
         marco.add(textAltura);
         marco.add(tfAltura);
+        marco.add(buttonCalcular);
+        marco.add(lResultado);
 
+
+        marco.setVisible(true);
     }
 
 }
