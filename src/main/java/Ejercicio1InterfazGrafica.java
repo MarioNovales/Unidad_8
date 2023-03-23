@@ -13,18 +13,20 @@ public class Ejercicio1InterfazGrafica {
 
         JFrame marco = new JFrame();
         marco.setLayout(new FlowLayout());
-        marco.setSize(300,400);
+        marco.setSize(200,200);
         //marco.getDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel textBase = new JLabel();
         JLabel textAltura= new JLabel();
-        JLabel lResultado = new JLabel();
+        JLabel textResultado = new JLabel();
 
         textBase.setText("Base");
         textAltura.setText("Altura");
 
-        JTextField tfBase = new JTextField();
-        JTextField tfAltura = new JTextField();
+
+        JTextField tfBase = new JTextField(12);
+        JTextField tfAltura = new JTextField(12);
+
 
         tfBase.addActionListener(new Ejercicio1Escuchador());
         tfAltura.addActionListener(new Ejercicio1Escuchador());
@@ -33,13 +35,14 @@ public class Ejercicio1InterfazGrafica {
 
         buttonCalcular.addActionListener(new Ejercicio1Escuchador());
 
+        //textResultado.setText(String.valueOf(Ejercicio1.areaTriandulo(Integer.parseInt(tfBase.getText()), Integer.parseInt(tfAltura.getText()))));
 
         marco.add(textBase);
         marco.add(tfBase);
         marco.add(textAltura);
         marco.add(tfAltura);
         marco.add(buttonCalcular);
-        marco.add(lResultado);
+        marco.add(textResultado);
 
 
         marco.setVisible(true);

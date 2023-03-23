@@ -9,4 +9,15 @@ public class Ejercicio1 {
 
         Ejercicio1InterfazGrafica.interfazGrafica();
     }
+
+
+
+    public static int areaTriandulo(int base, int altura){
+        int salida;
+
+        salida = (base * altura)/2;
+
+        return salida;
+
+    }
 }
