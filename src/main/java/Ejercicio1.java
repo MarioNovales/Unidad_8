@@ -5,22 +5,9 @@
 
 public class Ejercicio1 {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
-        Ejercicio1InterfazGrafica.interfazGrafica();
+        new Ejercicio1InterfazGrafica();
     }
 
-
-
-    public static String areaTriandulo(String base, String altura){
-        int salida;
-
-        int base1 = Integer.parseInt(base);
-        int altura1 = Integer.parseInt(altura);
-        
-        salida = (base1 * altura1)/2;
-
-        return String.valueOf(salida);
-
-    }
 }

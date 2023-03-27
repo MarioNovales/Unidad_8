@@ -4,48 +4,53 @@
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
-public class Ejercicio1InterfazGrafica {
+public class Ejercicio1InterfazGrafica extends JFrame {
 
 
-    public static void interfazGrafica(){
+    static JLabel lbBase = new JLabel();
+    static JLabel lbAltura = new JLabel();
+    static JLabel lbResultado = new JLabel();
+
+    static JTextField tfBase = new JTextField(12);
+    static JTextField tfAltura = new JTextField(12);
+
+    static JButton btnCalcular = new JButton("Area");
+
+    public Ejercicio1InterfazGrafica(){
 
         JFrame marco = new JFrame();
         marco.setLayout(new FlowLayout());
         marco.setSize(200,200);
-        //marco.getDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        marco.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-        JLabel textBase = new JLabel();
-        JLabel textAltura= new JLabel();
-        JLabel textResultado = new JLabel();
+        lbBase.setText("Base");
+        lbAltura.setText("Altura");
 
-        textBase.setText("Base");
-        textAltura.setText("Altura");
+        btnCalcular.addActionListener(e -> {
+            int area;
+
+            area = (Integer.parseInt(String.valueOf((tfBase)))*Integer.parseInt(String.valueOf(tfAltura)))/2;
+
+            lbResultado.setText("El area del triangulo es:" + area);
+        });
 
 
-        JTextField tfBase = new JTextField(12);
-        JTextField tfAltura = new JTextField(12);
 
-
-        tfBase.addActionListener(new Ejercicio1Escuchador());
-        tfAltura.addActionListener(new Ejercicio1Escuchador());
-
-        JButton buttonCalcular = new JButton("Area");
-
-        buttonCalcular.addActionListener(new Ejercicio1Escuchador());
-
-        textResultado.setText(Ejercicio1.areaTriandulo(tfBase.getText(), tfAltura.getText()));
-
-        marco.add(textBase);
+        marco.add(lbBase);
         marco.add(tfBase);
-        marco.add(textAltura);
+        marco.add(lbAltura);
         marco.add(tfAltura);
-        marco.add(buttonCalcular);
-        marco.add(textResultado);
+        marco.add(btnCalcular);
+        marco.add(lbResultado);
 
 
         marco.setVisible(true);
+
     }
+
 
 }
