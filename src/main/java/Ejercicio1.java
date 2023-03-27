@@ -12,12 +12,15 @@ public class Ejercicio1 {
 
 
 
-    public static int areaTriandulo(int base, int altura){
+    public static String areaTriandulo(String base, String altura){
         int salida;
 
-        salida = (base * altura)/2;
+        int base1 = Integer.parseInt(base);
+        int altura1 = Integer.parseInt(altura);
+        
+        salida = (base1 * altura1)/2;
 
-        return salida;
+        return String.valueOf(salida);
 
     }
 }

@@ -35,7 +35,7 @@ public class Ejercicio1InterfazGrafica {
 
         buttonCalcular.addActionListener(new Ejercicio1Escuchador());
 
-        //textResultado.setText(String.valueOf(Ejercicio1.areaTriandulo(Integer.parseInt(tfBase.getText()), Integer.parseInt(tfAltura.getText()))));
+        textResultado.setText(Ejercicio1.areaTriandulo(tfBase.getText(), tfAltura.getText()));
 
         marco.add(textBase);
         marco.add(tfBase);
