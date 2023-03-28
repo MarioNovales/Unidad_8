@@ -22,20 +22,35 @@ public class Ejercicio1InterfazGrafica extends JFrame {
 
     public Ejercicio1InterfazGrafica(){
 
+        super("Calculadora de areas de un triangulo");
+
         JFrame marco = new JFrame();
-        marco.setLayout(new FlowLayout());
-        marco.setSize(200,200);
+        marco.setLayout(null);
+        marco.setSize(350,300);
         marco.setDefaultCloseOperation(EXIT_ON_CLOSE);
+
 
         lbBase.setText("Base");
         lbAltura.setText("Altura");
 
+        lbBase.setBounds(100,50,50,20);
+        tfBase.setBounds(150,50,70,20);
+        lbAltura.setBounds(100,80,50,20);
+        tfAltura.setBounds(150,80,70,20);
+        lbResultado.setBounds(100,110,200,20);
+        btnCalcular.setBounds(120,150,70,30);
+
         btnCalcular.addActionListener(e -> {
             int area;
 
-            area = (Integer.parseInt(tfBase.getText())*Integer.parseInt(tfAltura.getText()))/2;
+            if ((tfBase.getText()).matches("[a-z]{1,100}") || (tfAltura.getText()).matches("[a-z]{1,100}")){
+                lbResultado.setText("Valor introducido no valido");
+            }else {
+                area = (Integer.parseInt(tfBase.getText())*Integer.parseInt(tfAltura.getText()))/2;
 
-            lbResultado.setText("El area del triangulo es:" + area);
+                lbResultado.setText("El area del triangulo es: " + area);
+            }
+
         });
 
 

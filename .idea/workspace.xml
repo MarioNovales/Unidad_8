@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b3df37e-1084-41b0-a27c-93450693c199" name="Changes" comment="inicio">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_3_23_10_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_3_23_10_18__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ejercicio1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ejercicio1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Ejercicio1InterfazGrafica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ejercicio1InterfazGrafica.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,13 +37,20 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/estudiante/IdeaProjects/Unidad_8"
+    "last_opened_file_path": "C:/Users/Mario_nt/IdeaProjects/Unidad_6"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Ejercicio1">
+    <configuration name="EjemploEvento" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EjemploEvento" />
+      <module name="Interfaces" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Ejercicio1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ejercicio1" />
-      <module name="Unidad_8" />
+      <module name="Interfaces" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -51,6 +58,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Ejercicio1" />
+        <item itemvalue="Application.EjemploEvento" />
       </list>
     </recent_temporary>
   </component>
