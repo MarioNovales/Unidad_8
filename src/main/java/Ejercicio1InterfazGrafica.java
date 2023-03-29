@@ -29,7 +29,6 @@ public class Ejercicio1InterfazGrafica extends JFrame {
         marco.setSize(350,300);
         marco.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-
         lbBase.setText("Base");
         lbAltura.setText("Altura");
 
