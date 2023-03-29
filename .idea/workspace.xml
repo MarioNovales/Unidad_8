@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b3df37e-1084-41b0-a27c-93450693c199" name="Changes" comment="inicio">
-      <change afterPath="$PROJECT_DIR$/src/main/java/VentanaEjercicio2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ejercicio1InterfazGrafica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ejercicio1InterfazGrafica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ejercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ejercicio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VentanaEjercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VentanaEjercicio2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/VentanaEjercicio3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VentanaEjercicio3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679572198978</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="inicio">
+      <created>1680077689741</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680077689741</updated>
+    </task>
+    <task id="LOCAL-00006" summary="inicio">
+      <created>1680078048310</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680078048310</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

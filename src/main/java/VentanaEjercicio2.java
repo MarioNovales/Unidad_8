@@ -18,30 +18,34 @@ public class VentanaEjercicio2 extends JFrame {
 
         JFrame marco = new JFrame("Sumar y restar reales");
         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        marco.setSize(350,250);
+        marco.setSize(350,200);
         marco.setLayout(null);
         marco.setResizable(false);
 
-        lbNum1.setBounds(20, 50,40,20);
-        tfNum1.setBounds(70, 50,100,20);
+        lbNum1.setBounds(20, 30,40,20);
+        tfNum1.setBounds(70, 30,100,20);
 
-        lbNum2.setBounds(20, 100,40,20);
-        tfNum2.setBounds(70,100,100,20);
+        lbNum2.setBounds(20, 80,40,20);
+        tfNum2.setBounds(70,80,100,20);
 
-        btnSumar.setBounds(80,150,50,30);
-        btnRestar.setBounds(135,150,50,30);
-        lbresultado.setBounds(190,150,70,30);
+        btnSumar.setBounds(80,130,50,30);
+        btnRestar.setBounds(135,130,50,30);
+        lbresultado.setBounds(190,130,100,30);
 
 
 
         btnSumar.addActionListener(e ->{
             double resultado;
 
-            if ((tfNum1.getText()).matches("[0-9 | .]{1,100}") || (tfNum2.getText()).matches("[0-9 | .]{1,100}")){
+            if ((tfNum1.getText()).matches("[0-9 | .]{1,100}") && (tfNum2.getText()).matches("[0-9 | .]{1,100}")){
 
                 resultado = (Double.parseDouble(tfNum1.getText()) + Double.parseDouble(tfNum2.getText()));
 
                 lbresultado.setText(String.valueOf(resultado));
+                lbresultado.setForeground(Color.BLACK);
+            }else {
+                lbresultado.setText("¡Error!");
+                lbresultado.setForeground(Color.RED);
             }
 
         });
@@ -49,14 +53,15 @@ public class VentanaEjercicio2 extends JFrame {
         btnRestar.addActionListener(e ->{
             double resultado;
 
-            if ((tfNum1.getText()).matches("[0-9 | .]{1,100}") || (tfNum2.getText()).matches("[0-9 | .]{1,100}")){
+            if ((tfNum1.getText()).matches("[0-9 | .]{1,100}") && (tfNum2.getText()).matches("[0-9 | .]{1,100}")){
 
                 resultado = (Double.parseDouble(tfNum1.getText()) - Double.parseDouble(tfNum2.getText()));
 
                 lbresultado.setText(String.valueOf(resultado));
                 lbresultado.setForeground(Color.RED);
             }else {
-                lbresultado.setText("Los valores introducidos son incorrectos");
+                lbresultado.setText("¡Error!");
+                lbresultado.setForeground(Color.RED);
             }
         });
 
