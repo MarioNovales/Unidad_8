@@ -20,7 +20,7 @@ public class VentanaEjercicio2 extends JFrame {
         marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         marco.setSize(350,250);
         marco.setLayout(null);
-
+        marco.setResizable(false);
 
         lbNum1.setBounds(20, 50,40,20);
         tfNum1.setBounds(70, 50,100,20);
