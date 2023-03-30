@@ -13,9 +13,9 @@ public class VentanaEjercicio4 extends JFrame {
     JLabel lbUsuario = new JLabel(new ImageIcon("src/main/resources/585e4bcdcb11b227491c3396.png"));
 
 
-    JTextField tfDato1 = new JTextField();
-    JTextField tfDato2 = new JTextField();
-    JTextField tfResultado = new JTextField();
+    JTextField tfDato1 = new JTextField(15);
+    JTextField tfDato2 = new JTextField(15);
+    JTextField tfResultado = new JTextField(15);
 
     JButton btnSumar = new JButton("+");
     JButton btnRestar = new JButton("-");
@@ -24,49 +24,55 @@ public class VentanaEjercicio4 extends JFrame {
     public VentanaEjercicio4(){
 
 
-        setSize(500,700);
+        setSize(800,800);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
-        setLayout(null);
+        setLayout(new BorderLayout());
+
+        lbUsuario.setSize(20,20);
+        lbExit.setSize(20,20);
+
+        //Panel 1 (Foto calculador)
+            JPanel p1 = new JPanel();
+            p1.setLayout(new FlowLayout());
+            p1.add(lbCalculadora);
+
+        //Panel 2 (Contiene izquierda)
+            JPanel p2 = new JPanel();
+            p2.setLayout(new GridLayout(5,1));
+            p2.add(lbDato1);
+            p2.add(lbDato2);
+            p2.add(lbResultado);
 
 
-        lbCalculadora.setBounds(50,0,70,50);
-
-        lbDato1.setBounds(10,100,60,20);
-        tfDato1.setBounds(130,100,80,30);
-
-        lbDato2.setBounds(10,140,60,20);
-        tfDato2.setBounds(130,140,80,30);
-
-        lbResultado.setBounds(10,180,60,20);
-        tfResultado.setBounds(130,180,80,30);
-
-        lbExit.setBounds(130,210,50,50);
-        lbUsuario.setBounds(130,270,50,50);
+        //panel 3 (centro)
+            JPanel p3 = new JPanel();
+            p3.setLayout(new GridLayout(5,1));
+            p3.add(tfDato1);
+            p3.add(tfDato2);
+            p3.add(tfResultado);
+            p3.add(lbUsuario);
+            p3.add(lbExit);
 
 
+        //Panel 4 (derecha)
+            JPanel p4 = new JPanel();
+            p4.setLayout(new GridLayout(4,2));
+            p4.add(btnSumar);
+            p4.add(btnRestar);
+            p4.add(btnMulti);
+            p4.add(btnDividir);
 
 
 
 
-        add(lbCalculadora);
 
-        add(lbDato1);
-        add(tfDato1);
 
-        add(lbDato2);
-        add(tfDato2);
+        add(p1,BorderLayout.NORTH);
+        add(p2,BorderLayout.WEST);
+        add(p3);
+        add(p4, BorderLayout.EAST);
 
-        add(lbResultado);
-        add(tfResultado);
-
-        add(lbExit);
-        add(lbUsuario);
-
-        add(btnSumar);
-        add(btnRestar);
-        add(btnMulti);
-        add(btnDividir);
         setVisible(true);
     }
 

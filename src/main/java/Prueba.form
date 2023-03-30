@@ -8,16 +8,6 @@
     <properties/>
     <border type="none" title="Codiciones de privaciadad"/>
     <children>
-      <component id="19b93" class="javax.swing.JTextArea" binding="textArea1" default-binding="true">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="131"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
       <vspacer id="c48ef">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
@@ -37,6 +27,16 @@
         </constraints>
         <properties>
           <text value="Aceptar"/>
+        </properties>
+      </component>
+      <component id="19b93" class="javax.swing.JTextArea" binding="lasCondicinesDePrivacidadTextArea" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="131"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Las condicines de privacidad son las siguientes:"/>
         </properties>
       </component>
     </children>
