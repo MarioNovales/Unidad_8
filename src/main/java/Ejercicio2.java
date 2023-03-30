@@ -4,4 +4,5 @@ public class Ejercicio2 {
         javax.swing.SwingUtilities.invokeLater(() -> {new VentanaEjercicio2();});
     }
 
+
 }

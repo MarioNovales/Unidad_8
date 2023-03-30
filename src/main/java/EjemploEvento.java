@@ -5,6 +5,7 @@ import java.awt.event.*;
 
     public class EjemploEvento extends JFrame {
 
+
         private JPanel contentPane;
         private JTextField textField;
         private JTextField textField_1;

@@ -4,6 +4,7 @@ import java.util.ArrayDeque;
 
 public class VentanaEjercicio4 extends JFrame {
 
+
     JLabel lbCalculadora = new JLabel(new ImageIcon("src/main/resources/1455210497_368194_1455210536_noticia_normal.jpg"));
     JLabel lbDato1 = new JLabel("Dato 1:");
     JLabel lbDato2 = new JLabel("Dato 2:");

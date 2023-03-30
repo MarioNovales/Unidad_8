@@ -30,6 +30,7 @@ public class VentanaEjercicio3 extends JFrame{
         btnValidar.setBounds(120,120,100,30);
 
 
+
         btnValidar.addActionListener(e -> {
             if ((tfUsuario.getText()).equals("daw")){
                 if ((String.valueOf(pfContraseña.getPassword())).equals("daw1")){

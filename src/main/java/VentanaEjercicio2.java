@@ -48,6 +48,7 @@ public class VentanaEjercicio2 extends JFrame {
                 lbresultado.setForeground(Color.RED);
             }
 
+
         });
 
         btnRestar.addActionListener(e ->{

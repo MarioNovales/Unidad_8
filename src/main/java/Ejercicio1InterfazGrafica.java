@@ -22,6 +22,7 @@ public class Ejercicio1InterfazGrafica extends JFrame {
 
     public Ejercicio1InterfazGrafica(){
 
+
         super("Calculadora de areas de un triangulo");
 
         JFrame marco = new JFrame();
