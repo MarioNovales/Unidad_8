@@ -49,7 +49,7 @@ public class Ejercicio1InterfazGrafica extends JFrame {
             }else {
                 area = (Integer.parseInt(tfBase.getText())*Integer.parseInt(tfAltura.getText()))/2;
 
-                lbResultado.setText("El area del triangulo es: " + area);
+                lbResultado.setText("El area del triangulo es: " + area + " m^2");
             }
 
         });

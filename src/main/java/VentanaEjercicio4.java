@@ -24,7 +24,7 @@ public class VentanaEjercicio4 extends JFrame {
     public VentanaEjercicio4(){
 
 
-        setSize(800,800);
+        setSize(600,600);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
         setLayout(new BorderLayout());
@@ -39,9 +39,13 @@ public class VentanaEjercicio4 extends JFrame {
 
         //Panel 2 (Contiene izquierda)
             JPanel p2 = new JPanel();
-            p2.setLayout(new GridLayout(5,1));
+            p2.setMinimumSize(new Dimension(200,600));
+            p2.setLayout(new GridLayout(5,2));
+        p2.add(new JLabel());
             p2.add(lbDato1);
+        p2.add(new JLabel());
             p2.add(lbDato2);
+        p2.add(new JLabel());
             p2.add(lbResultado);
 
 
@@ -58,10 +62,15 @@ public class VentanaEjercicio4 extends JFrame {
         //Panel 4 (derecha)
             JPanel p4 = new JPanel();
             p4.setLayout(new GridLayout(4,2));
+            p4.setMinimumSize(new Dimension(400,600));
             p4.add(btnSumar);
+            p4.add(new JLabel());
             p4.add(btnRestar);
+            p4.add(new JLabel());
             p4.add(btnMulti);
+            p4.add(new JLabel());
             p4.add(btnDividir);
+            p4.add(new JLabel());
 
 
 
@@ -72,6 +81,7 @@ public class VentanaEjercicio4 extends JFrame {
         add(p2,BorderLayout.WEST);
         add(p3);
         add(p4, BorderLayout.EAST);
+        add(new JPanel(), BorderLayout.SOUTH);
 
         setVisible(true);
     }
