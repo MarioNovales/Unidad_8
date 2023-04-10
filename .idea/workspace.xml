@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b3df37e-1084-41b0-a27c-93450693c199" name="Changes" comment="inicio">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_03_2023_17_39__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_03_2023_17_39__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_3_23_10_18_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_3_23_10_18__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_03_2023_17_03__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_03_2023_17_03__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_3_23_9_33__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_3_23_9_33__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_03_2023_17_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_03_2023_17_14__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Ejercicio1InterfazGrafica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Ejercicio1InterfazGrafica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/VentanaEjercicio2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VentanaEjercicio2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/VentanaEjercicio4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/VentanaEjercicio4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/1455210497_368194_1455210536_noticia_normal.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/1455210497_368194_1455210536_noticia_normal.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/585e4bcdcb11b227491c3396.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/585e4bcdcb11b227491c3396.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/istockphoto-1303004257-170667a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/istockphoto-1303004257-170667a.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +46,7 @@
     &quot;last_opened_file_path&quot;: &quot;/home/estudiante/IdeaProjects/Unidad_8&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Ejercicio4">
+  <component name="RunManager" selected="Application.Ejercicio3">
     <configuration name="EjemploEvento" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="EjemploEvento" />
       <module name="Unidad_8" />
@@ -69,7 +70,7 @@
     </configuration>
     <configuration name="Ejercicio3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Ejercicio3" />
-      <module name="Unidad_8" />
+      <module name="Interfaces" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -83,8 +84,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ejercicio4" />
         <item itemvalue="Application.Ejercicio3" />
+        <item itemvalue="Application.Ejercicio4" />
         <item itemvalue="Application.Ejercicio2" />
         <item itemvalue="Application.EjemploEvento" />
         <item itemvalue="Application.Ejercicio1" />

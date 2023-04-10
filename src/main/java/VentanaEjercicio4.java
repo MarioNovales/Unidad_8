@@ -72,11 +72,6 @@ public class VentanaEjercicio4 extends JFrame {
             p4.add(btnDividir);
             p4.add(new JLabel());
 
-
-
-
-
-
         add(p1,BorderLayout.NORTH);
         add(p2,BorderLayout.WEST);
         add(p3);
@@ -84,6 +79,25 @@ public class VentanaEjercicio4 extends JFrame {
         add(new JPanel(), BorderLayout.SOUTH);
 
         setVisible(true);
+
+        btnSumar.addActionListener(e ->{
+            double resultado;
+
+            if ((tfDato1.getText()).matches("[0-9 | .]{1,100}") && (tfDato2.getText()).matches("[0-9 | .]{1,100}")){
+
+                resultado = (Double.parseDouble(tfDato1.getText()) + Double.parseDouble(tfDato2.getText()));
+
+                tfResultado.setText(String.valueOf(resultado));
+                tfResultado.setForeground(Color.BLACK);
+            }else {
+                tfResultado.setText("¡Error!");
+                tfResultado.setForeground(Color.RED);
+            }
+
+
+        });
+
+
     }
 
 
