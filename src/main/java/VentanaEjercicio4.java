@@ -31,6 +31,7 @@ public class VentanaEjercicio4 extends JFrame {
 
         lbUsuario.setSize(20,20);
         lbExit.setSize(20,20);
+        tfResultado.setEditable(false);
 
         //Panel 1 (Foto calculador)
             JPanel p1 = new JPanel();
@@ -96,6 +97,58 @@ public class VentanaEjercicio4 extends JFrame {
 
 
         });
+
+        btnRestar.addActionListener(e ->{
+            double resultado;
+
+            if ((tfDato1.getText()).matches("[0-9 | .]{1,100}") && (tfDato2.getText()).matches("[0-9 | .]{1,100}")){
+
+                resultado = (Double.parseDouble(tfDato1.getText()) - Double.parseDouble(tfDato2.getText()));
+
+                tfResultado.setText(String.valueOf(resultado));
+                tfResultado.setForeground(Color.BLACK);
+            }else {
+                tfResultado.setText("¡Error!");
+                tfResultado.setForeground(Color.RED);
+            }
+
+
+        });
+
+        btnMulti.addActionListener(e ->{
+            double resultado;
+
+            if ((tfDato1.getText()).matches("[0-9 | .]{1,100}") && (tfDato2.getText()).matches("[0-9 | .]{1,100}")){
+
+                resultado = (Double.parseDouble(tfDato1.getText()) * Double.parseDouble(tfDato2.getText()));
+
+                tfResultado.setText(String.valueOf(resultado));
+                tfResultado.setForeground(Color.BLACK);
+            }else {
+                tfResultado.setText("¡Error!");
+                tfResultado.setForeground(Color.RED);
+            }
+
+
+        });
+
+        btnDividir.addActionListener(e ->{
+            double resultado;
+
+            if ((tfDato1.getText()).matches("[0-9 | .]{1,100}") && (tfDato2.getText()).matches("[0-9 | .]{1,100}")){
+
+                resultado = (Double.parseDouble(tfDato1.getText()) / Double.parseDouble(tfDato2.getText()));
+
+                tfResultado.setText(String.valueOf(resultado));
+                tfResultado.setForeground(Color.BLACK);
+            }else {
+                tfResultado.setText("¡Error!");
+                tfResultado.setForeground(Color.RED);
+            }
+
+
+        });
+
 
 
     }
