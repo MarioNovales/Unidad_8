@@ -85,7 +85,7 @@ public class VentanaEjercicio4 extends JFrame {
 
         btnExit.addActionListener(e ->{
 
-            setDefaultCloseOperation(EXIT_ON_CLOSE);
+            dispose();
 
         });
 
