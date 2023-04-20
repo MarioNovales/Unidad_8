@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayDeque;
 
 public class VentanaEjercicio4 extends JFrame {
 
@@ -9,8 +8,7 @@ public class VentanaEjercicio4 extends JFrame {
     JLabel lbDato1 = new JLabel("Dato 1:");
     JLabel lbDato2 = new JLabel("Dato 2:");
     JLabel lbResultado = new JLabel("Resultado");
-    JLabel lbExit = new JLabel(new ImageIcon("src/main/resources/istockphoto-1303004257-170667a.jpg"));
-    JLabel lbUsuario = new JLabel(new ImageIcon("src/main/resources/585e4bcdcb11b227491c3396.png"));
+
 
 
     JTextField tfDato1 = new JTextField(15);
@@ -21,6 +19,8 @@ public class VentanaEjercicio4 extends JFrame {
     JButton btnRestar = new JButton("-");
     JButton btnMulti = new JButton("X");
     JButton btnDividir = new JButton("/");
+    JButton btnExit = new JButton(new ImageIcon("src/main/resources/istockphoto-1303004257-170667a.jpg"));
+    JButton btnUsuario = new JButton(new ImageIcon("src/main/resources/585e4bcdcb11b227491c3396.png"));
     public VentanaEjercicio4(){
 
 
@@ -29,8 +29,8 @@ public class VentanaEjercicio4 extends JFrame {
         setResizable(false);
         setLayout(new BorderLayout());
 
-        lbUsuario.setSize(20,20);
-        lbExit.setSize(20,20);
+        btnUsuario.setSize(20,20);
+        btnExit.setSize(20,20);
         tfResultado.setEditable(false);
 
         //Panel 1 (Foto calculador)
@@ -56,8 +56,10 @@ public class VentanaEjercicio4 extends JFrame {
             p3.add(tfDato1);
             p3.add(tfDato2);
             p3.add(tfResultado);
-            p3.add(lbUsuario);
-            p3.add(lbExit);
+            p3.add(btnUsuario);
+            p3.add(btnExit);
+            btnExit.setSize(100,74);
+            btnUsuario.setSize(100,74);
 
 
         //Panel 4 (derecha)
@@ -80,6 +82,12 @@ public class VentanaEjercicio4 extends JFrame {
         add(new JPanel(), BorderLayout.SOUTH);
 
         setVisible(true);
+
+        btnExit.addActionListener(e ->{
+
+            setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        });
 
         btnSumar.addActionListener(e ->{
             double resultado;
